@@ -12,3 +12,22 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const listEl = document.querySelector('.gallery');
+console.log(listEl);
+
+const makeGalleryCard = ({url, alt}) => 
+`<li> <img src="${url}" alt="${alt}" width="100%" height="100%" /> </li>`;
+
+const markup = images.map((data) => makeGalleryCard(data)).join("");
+console.log(markup);
+
+listEl.insertAdjacentHTML("afterbegin", markup);
+
+ 
+  listEl.style.padding = "10px";
+  listEl.style.backgroundColor = "tomato";
+  listEl.style.listStyle = "none";
+  listEl.style.display = "flex";  
+  listEl.style.gap = "10px";
+ 

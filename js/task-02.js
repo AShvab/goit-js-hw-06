@@ -8,17 +8,23 @@ const ingredients = [
   'Condiments',
 ];
 
-const allLiItems = document.querySelector('#ingredients');
+const ulListItems = document.querySelector('#ingredients');
+console.log(ulListItems);
 
-const itemsList = ingredients.map(element => {
+
+const liItemsList = ingredients.map(element => {
 
   const itemEl = document.createElement('li');  
+
   itemEl.classList.add('item');
-  itemEl.textContent = `${element}`; 
+  itemEl.textContent = `${element}`;
+
   return itemEl;
 });
 
-// console.log(itemsList);
-allLiItems.append(...itemsList);
-// console.log(allLiItems);
+console.log(liItemsList);
+ulListItems.append(...liItemsList);
+
+
+
 
