@@ -7,8 +7,6 @@
 // Для виконання цього завдання потрібно використати метод forEach() 
 // і властивості навігації по DOM.
 
-
-
 const itemsEl = document.querySelectorAll('.item');
 // console.log(itemsEl);
 console.log('Number of categories:' , itemsEl.length);
@@ -19,4 +17,5 @@ itemsEl.forEach(element => {
     console.log('Category:' , titleEl.textContent);
     console.log('Elements:' , liEl.length);
 });
+
 
